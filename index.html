@@ -9,7 +9,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
         <!-- Gotham font (Bold) -->
-        <link href="https://db.onlinewebfonts.com/c/5d6f50ed2dde0e4ad455448f896c09f0?family=Gotham+Bold" rel="stylesheet"/>
+        <link
+            href="https://db.onlinewebfonts.com/c/5d6f50ed2dde0e4ad455448f896c09f0?family=Gotham+Bold"
+            rel="stylesheet"
+        />
         <!-- Proxima Nova font (Regular) -->
         <link href="https://db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova" rel="stylesheet"/>
         <!-- Standardizes default styles across different browsers -->
@@ -17,5 +20,84 @@
         <!-- Main stylesheet -->
         <link rel="stylesheet" href="css/index-styles.css"/>
     </head>
-    <body></body>
+    <body>
+        <header class="header-bar">
+            <div class="header-bar__logo">
+                <a class="header-bar__logo--link" href="#">
+                    <img src="images/logo-header.png" alt="Productly"/>
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-bar__menu">
+                    <li class="nav-bar__menu-item">
+                        <a class="nav-bar__menu-item--link" href="#">Product</a>
+                    </li>
+                    <li class="nav-bar__menu-item">
+                        <a class="nav-bar__menu-item--link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-bar__menu-item">
+                        <a class="nav-bar__menu-item--link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-bar__menu-item">
+                        <a class="nav-bar__menu-item--link" href="#">Resources</a>
+                    </li>
+                </ul>
+                <div class="nav-bar__actions">
+                    <a class="nav-bar__action nav-bar__action-sign-in" href="#">Sign In</a>
+                    <a class="nav-bar__action nav-bar__action-sign-up" href="#">Sign Up</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero-section">
+                <div class="hero-section__content">
+                    <h1 class="hero-section__title">The Design Thinking superpowers</h1>
+                    <p class="hero-section__info">
+                        Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to
+                        imagine your next user experience.
+                    </p>
+                    <div class="hero-section__actions">
+                        <a class="hero-section__action hero-section__action--btn" href="#">Get started</a>
+                        <span class="triangle-right"></span>
+                        <a class="hero-section__action hero-section__action--video-btn" href="#">Watch the Video</a>
+                    </div>
+                </div>
+                <div class="hero-section__image">
+                    <img src="images/hero-image.png" alt=""/>
+                </div>
+            </section>
+            <section class="features-section">
+                <div class="features-section__content">
+                    <h2 class="features-section__title">We design tools to unveil your superpowers</h2>
+                    <div class="features-section__cards">
+                        <div class="features-section__card">
+                            <img src="images/features-purple-icon.png" alt=""/>
+                            <h4 class="features-section__card-heading">First click tests</h4>
+                            <p class="features-section__card-info">While most people enjoy casino gambling.</p>
+                        </div>
+                        <div class="features-section__card">
+                            <img src="images/features-yellow-icon.png" alt=""/>
+                            <h4 class="features-section__card-heading">Design surveys</h4>
+                            <p class="features-section__card-info">
+                                Sports betting, lottery and bingo playing for the fun.
+                            </p>
+                        </div>
+                        <div class="features-section__card">
+                            <img src="images/features-red-icon.png" alt=""/>
+                            <h4 class="features-section__card-heading">Preference tests</h4>
+                            <p class="features-section__card-info">The Myspace page defines the individual.</p>
+                        </div>
+                        <div class="features-section__card">
+                            <img src="images/features-blue-icon.png" alt=""/>
+                            <h4 class="features-section__card-heading">Five second tests</h4>
+                            <p class="features-section__card-info">
+                                Personal choices and the overall personality of the person.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="features-section__action--btn" href="#">SIGN UP NOW</a>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
