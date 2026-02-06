@@ -60,7 +60,7 @@ a {
     flex-wrap: wrap;
     gap: 20px;
 }
-.nav-bar__action-sign-in {
+.nav-bar__cta-sign-in {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -75,10 +75,10 @@ a {
     padding-left: 25px;
     padding-right: 22px;
 }
-.nav-bar__action-sign-in:hover {
+.nav-bar__cta-sign-in:hover {
     background-color: #bcd0e5;
 }
-.nav-bar__action-sign-up {
+.nav-bar__cta-sign-up {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -93,7 +93,7 @@ a {
     padding-left: 25px;
     padding-right: 23px;
 }
-.nav-bar__action-sign-up:hover {
+.nav-bar__cta-sign-up:hover {
     background-color: #f57600;
 }
 .hero-section {
@@ -141,7 +141,7 @@ a {
     gap: 10px;
     flex-grow: 2;
 }
-.hero-section__action--btn {
+.hero-section__cta--btn {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -154,7 +154,7 @@ a {
     padding-bottom: 14px;
     border-radius: 4px;
 }
-.hero-section__action--btn:hover {
+.hero-section__cta--btn:hover {
     background-color: #f57600;
 }
 .triangle-right {
@@ -166,7 +166,7 @@ a {
     border-radius: 3px;
     margin-left: 30px;
 }
-.hero-section__action--video-btn {
+.hero-section__cta--video-btn {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -179,7 +179,8 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .features-section__content {
     display: flex;
@@ -226,7 +227,7 @@ a {
     line-height: 26px;
     color: #544837;
 }
-.features-section__action--btn {
+.features-section__cta--btn {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -239,6 +240,56 @@ a {
     padding-bottom: 14px;
     border-radius: 4px;
 }
-.features-section__action--btn:hover {
+.features-section__cta--btn:hover {
     background-color: #f57600;
+}
+.roles-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+.roles-section__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 486px;
+    min-height: 531px;
+    gap: 20px;
+}
+.roles-section__eyebrow-headline {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #544837;
+}
+.roles-section__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #2f281e;
+    margin: 0;
+}
+.roles-section__text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    margin: 0;
+}
+.roles-section__subheading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2f281e;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
