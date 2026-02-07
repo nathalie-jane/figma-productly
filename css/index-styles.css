@@ -1,324 +1,514 @@
+/* Ensures the page takes up the full viewport height */
 body {
-    min-height: 100vh;
+	min-height: 100vh;
 }
+
+/* Container for logo image, navigation menu and CTA link buttons */
 .header-bar {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 22%;
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-    padding-top: 20px;
-    z-index: 5;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 22%;
+	position: sticky; /* Makes the header bar stick to the top of the viewport when scrolling */
+	top: 0; /* Positions the header bar at the top */
+	background-color: #ffffff;
+	padding-top: 20px;
+	z-index: 5; /* Ensures header bar stays above other content */
 }
-.header-bar__logo {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
+
+/* Navigation menu and CTA link buttons container */
 .nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 35px;
-    flex-grow: 0.5;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 35px;
+	flex-grow: 0.7;
 }
+
+/* Navigation menu items container */
 .nav-bar__menu {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    flex-grow: 0.4;
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	flex-grow: 0.4;
 }
+
+/* Navigation menu items displayed horizontally */
 .nav-bar__menu-item {
-    display: inline-flex;
+	display: inline-flex;
 }
+
+/* Removes default underline for links */
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
+
+/* Navigation links styling */
 .nav-bar__menu-item--link {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 28px;
-    color: #2f281e;
-    padding-left: 5px;
-    padding-right: 5px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 28px;
+	color: #2f281e;
+	padding-left: 5px;
+	padding-right: 5px;
 }
+
+/* Hover effect for navigation menu links */
 .nav-bar__menu-item--link:hover {
-    background-color: #e5e8ec;
-    border-style: none;
-    border-radius: 4px;
+	background-color: #e5e8ec;
+	border-style: none;
+	border-radius: 4px;
 }
+
+/* Container for sign-in and sign-up link buttons */
 .nav-bar__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 }
+
+/* Styling for sign-in link buttons */
 .nav-bar__cta-sign-in {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 16px;
-    color: #173a56;
-    border-color: #bcd0e5;
-    border-style: solid;
-    border-width: thin;
-    border-radius: 4px;
-    padding-bottom: 11px;
-    padding-top: 11px;
-    padding-left: 25px;
-    padding-right: 22px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 16px;
+	color: #173a56;
+	border-color: #bcd0e5;
+	border-style: solid;
+	border-width: thin;
+	border-radius: 4px;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	padding-left: 25px;
+	padding-right: 22px;
 }
+
+/* Hover effect for sign-in link button */
 .nav-bar__cta-sign-in:hover {
-    background-color: #bcd0e5;
+	background-color: #bcd0e5;
 }
+
+/* Styling for sign-up link button */
 .nav-bar__cta-sign-up {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #ff9900;
-    border-style: solid;
-    border-width: thin;
-    border-radius: 4px;
-    padding-bottom: 11px;
-    padding-top: 11px;
-    padding-left: 25px;
-    padding-right: 23px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #ff9900;
+	border-style: solid;
+	border-width: thin;
+	border-radius: 4px;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	padding-left: 25px;
+	padding-right: 23px;
 }
+
+/* Hover effect for sign-up link button */
 .nav-bar__cta-sign-up:hover {
-    background-color: #f57600;
+	background-color: #f57600;
 }
+
+/* Container for text, image and CTA links in hero section */
 .hero-section {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
+
+/* Container for text and CTA links in hero section */
 .hero-section__content {
-    display: flex;
-    flex-direction: column;
-    max-width: 518px;
+	display: flex;
+	flex-direction: column;
 }
+
+/* Styling for title text */
 .hero-section__title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 44px;
-    line-height: 54px;
-    color: #2f281e;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 44px;
+	line-height: 54px;
+	color: #2f281e;
 }
+
+/* Styling for info text */
 .hero-section__info {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #544837;
-    max-width: 458px;
-    margin-top: 0;
-    margin-bottom: 22px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 28px;
+	color: #544837;
+	max-width: 458px;
+	margin-top: 0;
+	margin-bottom: 22px;
 }
+
+/* Container for image */
 .hero-section__image {
-    display: flex;
-    padding-top: 20px;
-    min-height: 496px;
-    height: 100%;
+	display: flex;
+	padding-top: 20px;
+	min-height: 496px;
+	height: 100%;
 }
+
+/* Container for CTA links */
 .hero-section__actions {
-    margin-top: 22px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    flex-grow: 2;
+	margin-top: 22px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	flex-grow: 2;
 }
+
+/* Styling for CTA link button */
 .hero-section__cta--btn {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #ff9900;
-    padding-left: 41px;
-    padding-right: 41px;
-    padding-top: 15px;
-    padding-bottom: 14px;
-    border-radius: 4px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #ff9900;
+	padding-left: 41px;
+	padding-right: 41px;
+	padding-top: 15px;
+	padding-bottom: 14px;
+	border-radius: 4px;
 }
+
+/* Hover effect for hero section CTA link button */
 .hero-section__cta--btn:hover {
-    background-color: #f57600;
+	background-color: #f57600;
 }
-.triangle-right {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-left: 15px solid #ff9900;
-    border-bottom: 10px solid transparent;
-    border-radius: 3px;
-    margin-left: 30px;
-}
+
+/* Styling for hero section video CTA video link */
 .hero-section__cta--video-btn {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 16px;
-    color: #ff9900;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 16px;
+	color: #ff9900;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	margin-left: 10px;
 }
+
+/* Styling for play icon next to video CTA link */
+.fa-play {
+	color: #ff9900;
+	padding-right: 5px; /* Adds spacing between icon and link text */
+}
+
+/* Slightly enlarges the CTA link on hover */
+.hero-section__cta--video-btn:hover {
+	transform: scale(1.06);
+}
+
+/*Container for features section */
 .features-section {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
 }
+
+/* Container for title text, cards and CTA link button in features section */
 .features-section__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	margin-top: 40px;
 }
+
+/* Styling for title text in features section */
 .features-section__title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 36px;
-    color: #2f281e;
-    max-width: 539px;
-    max-height: 108px;
-    text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 36px;
+	color: #2f281e;
+	text-align: center;
 }
+
+/* Container for features section cards */
 .features-section__cards {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
 }
+
+/* Container for individual cards */
 .features-section__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 240px;
-    max-height: 204px;
-    align-items: baseline;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
 }
+
+/* Styling for card headings */
 .features-section__card-heading {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 22px;
-    color: #2f281e;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 22px;
+	color: #2f281e;
 }
+
+/* Info text styling for cards */
 .features-section__card-info {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 26px;
-    color: #544837;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #544837;
 }
+
+/* Styling for CTA link button in features section */
 .features-section__cta--btn {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #ff9900;
-    padding-left: 34px;
-    padding-right: 32px;
-    padding-top: 15px;
-    padding-bottom: 14px;
-    border-radius: 4px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #ff9900;
+	padding-left: 34px;
+	padding-right: 32px;
+	padding-top: 15px;
+	padding-bottom: 14px;
+	border-radius: 4px;
 }
+
+/* Hover effect for CTA link button in features section */
 .features-section__cta--btn:hover {
-    background-color: #f57600;
+	background-color: #f57600;
 }
+
+/* Container for roles section */
 .roles-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
+
+/* Container for text and image in roles section */
 .roles-section__content {
-    display: flex;
-    flex-direction: column;
-    max-width: 486px;
-    min-height: 531px;
+	display: flex;
+	flex-direction: column;
 }
+
+/* Styling for eyebrow headline text */
 .roles-section__eyebrow-headline {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    color: #544837;
-    margin-bottom: 8px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #544837;
+	margin-bottom: 8px;
 }
+
+/* Styling for title text */
 .roles-section__title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 36px;
-    color: #2f281e;
-    margin-bottom: 12px;
-    margin-top: 0;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 36px;
+	color: #2f281e;
+	margin-bottom: 12px;
+	margin-top: 0;
 }
+
+/* Styling for parapgraph text */
 .roles-section__text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 26px;
-    color: #544837;
-    margin-top: 12px;
-    margin-bottom: 25px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #544837;
+	margin-top: 12px;
+	margin-bottom: 25px;
 }
+
+/* Adds extra spacing below the intro text */
 .roles-section__text--intro {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
+
+/* Styling for subheadings */
 .roles-section__subheading {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 26px;
-    color: #2f281e;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #2f281e;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
 }
+
+/* Reverses the order of text and image in roles section for product managers */
 .roles-section--product-managers {
-    flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
+
+/* Container for list items in roles section for product managers */
 .roles-section__list {
-    list-style-type: none;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+	list-style-type: none;
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
 }
+
+/* Spacing between icons and text */
 .roles-section__list-item--icon {
-    margin-right: 30px;
+	margin-right: 30px;
 }
+
+/* Styling for list text */
 .roles-section__list-text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 26px;
-    color: #544837;
-    display: inline-flex;
-    margin-bottom: 30px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #544837;
+	display: inline-flex; /* Icon and text are aligned horizontally */
+	margin-bottom: 30px; /* Spacing between list items */
+}
+
+/* Container for logo image, navigation menu and input form in footer */
+.footer-nav {
+	display: flex;
+	flex-direction: row; /* Logo image, navigation menu and input form are aligned horizontally */
+	justify-content: space-evenly;
+	align-items: baseline;
+	margin-bottom: 40px;
+}
+
+/* Moves the logo image down slightly */
+.footer-nav__content {
+	transform: translateY(10px);
+}
+
+/* Container for navigation menu items in the footer section */
+.footer-nav__menu {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column; /* Navigation menu items are stacked vertically */
+}
+
+/* Styling for navigation menu headings */
+.footer-nav__menu-heading {
+	font-family: "Gotham Bold", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 30px;
+	color: #2f281e;
+	margin-bottom: 35px;
+}
+
+/* Footer navigation menu links */
+.footer-nav__menu-item--link {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 35px;
+	color: #544837;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Hover effect for navigation menu links */
+.footer-nav__menu-item--link:hover {
+	background-color: #e5e8ec;
+	border-style: none;
+	border-radius: 4px;
+}
+
+/* Container for input form and CTA link button */
+.footer-nav__form {
+	display: flex;
+	flex-direction: column; /* Input form elements are stacked vertically */
+	align-items: baseline;
+	gap: 16px;
+}
+
+/* Styling for form text */
+.footer-nav__form-text {
+	font-family: "Gotham Bold", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 30px;
+	color: #2f281e;
+}
+
+/* Input field for phone number */
+.footer-nav__form-input {
+	border-color: #bcd0e5;
+	border-style: solid;
+	border-radius: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 119px;
+}
+
+/* Focus effect for phone number input */
+.footer-nav__form-input:focus {
+	outline: none;
+	border-color: #8ba7c5;
+}
+
+/* Placeholder text styling for phone number input */
+.footer-nav__form-input::placeholder {
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #bcd0e5;
+}
+
+/* Styling for CTA link button */
+.footer-nav__form-cta--btn {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	background-color: #ff9900;
+	color: #ffffff;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	border-radius: 4px;
+	border-style: none;
+	margin-top: 21px;
+}
+
+/* Hover effect for CTA link button */
+.footer-nav__form-cta--btn:hover {
+	background-color: #f57600;
 }
