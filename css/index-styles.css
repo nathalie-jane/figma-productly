@@ -8,9 +8,8 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: space-around;
 	align-items: center;
-	gap: 22%;
 	position: sticky; /* Makes the header bar stick to the top of the viewport when scrolling */
 	top: 0; /* Positions the header bar at the top */
 	background-color: #ffffff;
@@ -22,9 +21,9 @@ body {
 .nav-bar {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	align-items: baseline;
-	gap: 35px;
-	flex-grow: 0.7;
+	gap: 40px;
 }
 
 /* Navigation menu items container */
@@ -32,7 +31,7 @@ body {
 	list-style-type: none;
 	padding: 0;
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
 	gap: 30px;
 	flex-grow: 0.4;
 }
@@ -69,7 +68,6 @@ a {
 /* Container for sign-in and sign-up link buttons */
 .nav-bar__actions {
 	display: flex;
-	flex-wrap: wrap;
 	gap: 20px;
 }
 
@@ -121,6 +119,7 @@ a {
 .hero-section {
 	margin-top: 20px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 }
@@ -157,16 +156,16 @@ a {
 /* Container for image */
 .hero-section__image {
 	display: flex;
-	padding-top: 20px;
+	max-width: 605px;
+	width: 100%;
 	min-height: 496px;
-	height: 100%;
+	padding-top: 20px;
 }
 
 /* Container for CTA links */
 .hero-section__actions {
 	margin-top: 22px;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	gap: 10px;
 	flex-grow: 2;
@@ -246,6 +245,7 @@ a {
 /* Container for features section cards */
 .features-section__cards {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	gap: 50px;
 }
@@ -395,9 +395,31 @@ a {
 	margin-bottom: 30px; /* Spacing between list items */
 }
 
+/* Image sizing for the designers roles section */
+.roles-section__image--designers {
+	max-width: 520px;
+	width: 100%;
+	min-height: 574px;
+}
+
+/* Image sizing for the product managers roles section */
+.roles-section__image--managers {
+	max-width: 535px;
+	width: 100%;
+	min-height: 521px;
+}
+
+/* Image sizing for the marketers roles section */
+.roles-section__image--marketers {
+	max-width: 542px;
+	width: 100%;
+	min-height: 609px;
+}
+
 /* Container for logo image, navigation menu and input form in footer */
 .footer-nav {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row; /* Logo image, navigation menu and input form are aligned horizontally */
 	justify-content: space-evenly;
 	align-items: baseline;
@@ -469,10 +491,11 @@ a {
 	border-color: #bcd0e5;
 	border-style: solid;
 	border-radius: 4px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	max-width: 325px;
+	width: 100%;
+	min-height: 48px;
+	box-sizing: border-box;
 	padding-left: 15px;
-	padding-right: 119px;
 }
 
 /* Focus effect for phone number input */
@@ -491,7 +514,7 @@ a {
 	color: #bcd0e5;
 }
 
-/* Styling for CTA link button */
+/* Styling for CTA button */
 .footer-nav__form-cta--btn {
 	font-family: "Poppins", sans-serif;
 	font-style: normal;
@@ -508,7 +531,7 @@ a {
 	margin-top: 21px;
 }
 
-/* Hover effect for CTA link button */
+/* Hover effect for CTA button */
 .footer-nav__form-cta--btn:hover {
 	background-color: #f57600;
 }
